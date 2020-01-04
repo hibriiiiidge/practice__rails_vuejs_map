@@ -56,7 +56,7 @@ export default {
     // console.log("keys5: " + requireContext.keys()[0].split('/').pop().split('.').shift());
 
     requireContext.keys().forEach(key => {
-      // let name = key.split('/').pop().split('.').shift()
+      let name = key.split('/').pop().split('.').shift()
       components[name] = requireContext(key).default
       // let name = key.match(/\/(.*?).(vue|js)/);
       // components[name[1]] = requireContext(key).default
